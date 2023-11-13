@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const mongourl = "mongodb+srv://sunnylaumongodb:QVq5GxR1Nsj2zHS5@cluster0.myrqpax.mongodb.net/?retryWrites=true&w=majority";
+const mongourl = "mongodb+srv://tsokinlong:7KcLypYFwhQKKHtV@cluster0.re0ykvt.mongodb.net/?retryWrites=true&w=majority";
 const mongoose = require("mongoose");
 
 var cameraSchema = mongoose.Schema({
