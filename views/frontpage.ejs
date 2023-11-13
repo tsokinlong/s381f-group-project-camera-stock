@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <H1>Welcome <%= user.userid %>!</H1>
+    <p>Your userid is: <i><%= user.userid %></i></p>
+    <p><a href="/logout">Logout</a></p>
+
+    <% if (status && status == "error") { %>
+    <h1 style="color: red">Camera stock with the same name exist</h1>
+    <% } %>
+
+    <h2>Create a new stock</h2>
+    <form
+      action="/camera/create"
+      method="post"
+    >
+      Name:
+      <input
+        type="text"
+        name="name"
+        value="Cannon"
+      /><br />
+      Age:
+      <input
+        type="number"
+        name="quantity"
+        value="50"
+      /><br />
+      <input
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </body>
+</html>

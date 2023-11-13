@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <p>Use the following IDs and Password:</p>
+    <ol>
+      <li>guest (password: guest)</li>
+      <li>developer (password: developer)</li>
+    </ol>
+    <hr />
+    <% console.log(status);%> <% if (status && status == "error") { %>
+    <h1 style="color: red">Incorrect username or password</h1>
+    <% } %>
+
+    <div class="border-2 border-gray-400">
+      <form
+        action="/login"
+        method="post"
+      >
+        Username:
+        <input
+          type="text"
+          name="name"
+        /><br />
+        Password:
+        <input
+          type="password"
+          name="password"
+        /><br />
+        <input
+          type="submit"
+          value="Login"
+        />
+      </form>
+    </div>
+  </body>
+</html>

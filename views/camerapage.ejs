@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <h1>Camera</h1>
+    <% if (data) { for (let i = 0; i < data.length; i++) { %>
+    <p>ID: <%= data[i]._id %></p>
+    <p>Name: <%= data[i].name %></p>
+    <p>Qty: <%= data[i].quantity %></p>
+    <% }} %>
+  </body>
+</html>
