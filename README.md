@@ -1,6 +1,8 @@
 # COMPS381F - Group Project - Camera Stock
 
-Member: Brian Tso Kin Long (s1246....)
+Member:  
+Name: Brian Tso Kin Long  
+MUID: s12467807
 
 ### Purpose
 
